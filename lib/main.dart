@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './components/navbar.dart';
-import './components/login.dart';
+import 'package:zexui/components/navbar.dart';
+import 'package:zexui/components/login.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -31,7 +31,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,13 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: EdgeInsets.all(10),
         child: LoginForm(),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), 
+      
     );
   }
 }

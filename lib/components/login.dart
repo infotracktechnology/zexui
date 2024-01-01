@@ -1,6 +1,10 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
+import 'package:zexui/components/button.dart';
 
 class LoginForm extends StatefulWidget {
+  const LoginForm({super.key});
   @override
   _LoginFormState createState() => _LoginFormState();
 }
@@ -24,7 +28,11 @@ class _LoginFormState extends State<LoginForm> {
             decoration: InputDecoration(labelText: 'Password'),
           ),
           SizedBox(height: 30),
-          ElevatedButton(onPressed: () {}, child: Text('Login', style: TextStyle(fontSize: 20),)),
+          Button(
+            buttonText: 'Login',
+            onPressed: () {},
+            width: 300,
+          )
         ],
       ),
     );
